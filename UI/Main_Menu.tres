@@ -1,0 +1,73 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://k7hhrw2byy6m"]
+
+[ext_resource type="FontFile" uid="uid://27ovq7lybtej" path="res://Assets/Hyperspace.otf" id="1_scsb6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4i8ic"]
+bg_color = Color(0, 0.160784, 0.184314, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0.156863, 0.105882, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_167rq"]
+bg_color = Color(0, 0.258824, 0.294118, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.262745, 0.262745, 0.262745, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pfhsm"]
+bg_color = Color(0, 0.160784, 0.184314, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0.294118, 0.184314, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4b2qh"]
+bg_color = Color(0, 0.160784, 0.184314, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mag55"]
+bg_color = Color(0, 0.160784, 0.184314, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[resource]
+default_font = ExtResource("1_scsb6")
+Button/fonts/font = ExtResource("1_scsb6")
+Button/styles/disabled = SubResource("StyleBoxFlat_4i8ic")
+Button/styles/focus = SubResource("StyleBoxFlat_167rq")
+Button/styles/hover = SubResource("StyleBoxFlat_pfhsm")
+Button/styles/normal = SubResource("StyleBoxFlat_4b2qh")
+Button/styles/pressed = SubResource("StyleBoxFlat_mag55")
+Label/fonts/font = ExtResource("1_scsb6")
