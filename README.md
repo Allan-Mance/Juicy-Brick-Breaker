@@ -1,14 +1,13 @@
-# Project Name
+# Space Breaker
 
 Context and date
-
+9/28/23
 Description
-
+Space Themed Breakout Clone
 
 ## Implementation
 
-Which features you included
-
+Added Colors, Emitters, and Theme
 
 ## References
 
@@ -17,3 +16,4 @@ Which features you included
 
 
 ## Created by
+Allan Mance
