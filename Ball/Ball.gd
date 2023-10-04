@@ -6,6 +6,16 @@ var speed_multiplier = 1.0
 var accelerate = false
 var decay = 0.04
 
+var time_highlight = 0.4
+var time_highlight_size = 0.3
+
+var wobble_period = 0.0
+var wobble_amplitude = 0.0
+var wobble_max = 5
+var wobble_direction = Vector2.ZERO
+var decay_wobble = 0.15
+var tween
+
 var released = true
 
 var initial_velocity = Vector2.ZERO
