@@ -17,7 +17,7 @@ func _ready():
 	position.x = new_position.x
 	position.y = -100
 	tween = create_tween()
-	tween.tween_property(self, "position", new_position, 0.5 + randf()*2).set_trans(tween.TRANS_BOUNCE)
+	tween.tween_property(self, "position", new_position, 0.5 + randf()*2).set_trans(tween.TRANS_SPRING)
 	if score >= 100:
 		$ColorRect.color = Color8(224,49,49, 255)
 	elif score >= 90:
@@ -45,7 +45,6 @@ func hit(_ball):
 func die():
 	dying = true
 	collision_layer = 0
-	$ColorRect.hide()
 	$Sparkle.emitting = true
 	Global.update_score(score)
 	if not Global.feverish:
