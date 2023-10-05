@@ -43,6 +43,8 @@ func hit(_ball):
 	die()
 
 func die():
+	var Brick_Sound = get_node("/root/Game/Brick_Sound")
+	Brick_Sound.play()
 	dying = true
 	collision_layer = 0
 	$Sparkle.emitting = true

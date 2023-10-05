@@ -24,6 +24,8 @@ func _input(event):
 		target.x += event.relative.x
 
 func hit(_ball):
+	var Paddle_Sound = get_node("/root/Game/Paddle_Sound")
+	Paddle_Sound.play()
 	$Highlight.modulate.a = 1
 	$Sparkle.emitting = true
 
