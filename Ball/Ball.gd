@@ -5,7 +5,7 @@ var max_speed = 600.0
 var speed_multiplier = 1.0
 var accelerate = false
 var decay = 0.04
-
+var h_rotate = 0.0
 var time_highlight = 0.4
 var time_highlight_size = 0.3
 
@@ -69,6 +69,16 @@ func change_size(s):
 
 func change_speed(s):
 	speed_multiplier = s
+	
+func comet():
+	h_rotate = wrapf(h_rotate+0.01, 0, 1)
+	var Comet_Container = get_node_or_null("/root/Game/Comet_Container")
+	if Comet_Container != null:
+		var sprite = $Images/Sprite.duplicate()
+		sprite.global_position = global_position
+		sprite.modulate.s = 0.6
+		sprite.modulate.h = h_rotate
+		Comet_Container.add_child(sprite)
 
 func die():
 	var Die_Sound = get_node("/root/Game/Die_Sound")
