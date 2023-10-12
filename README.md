@@ -7,7 +7,13 @@ Space Themed Breakout Clone
 
 ## Implementation
 
-Added Colors, Emitters, and Theme
+- Added Colors
+- Added Bounce to bricks when falling in at begining of game
+- Added Emitters from paddle / brick on contact
+- Added Text Theme
+- Added Space themed ball / paddle
+- Created and Added Music
+- Created and Added Sound Effects
 
 ## References
 
