@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://bd5m3yq1k5fx8"]
+[gd_scene load_steps=19 format=3 uid="uid://bd5m3yq1k5fx8"]
 
 [ext_resource type="Script" path="res://Brick/Brick_Container.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://dmwf8wjdir6y5" path="res://Paddle/Paddle.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://bunk5oxwbsr6d" path="res://Assets/ivana-cajina-asuyh-_ZX54-unsplash.png" id="2_ukpco"]
 [ext_resource type="Script" path="res://Ball/Ball_Container.gd" id="3"]
 [ext_resource type="Script" path="res://Game.gd" id="4"]
 [ext_resource type="PackedScene" uid="uid://ci5q3vmuimsfr" path="res://UI/Pause_Menu.tscn" id="5"]
@@ -24,6 +25,9 @@ size = Vector2(1224, 200)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ukpco")
 
 [node name="Comet_Container" type="Node2D" parent="."]
 
